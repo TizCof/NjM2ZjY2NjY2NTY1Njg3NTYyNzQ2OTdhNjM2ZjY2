@@ -1,0 +1,263 @@
+local keyhub = "NjM2ZjY2NjY2NTY1Njg3NTYyNzA2MTY5NjQ3NjY1NzI3MzY5NmY2ZTMxNzQ2OTdhNjM2ZjY2"
+
+if game.PlaceId == 7365655137 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Coffee Hub | Counter Blox | Free Script", "Synapse")
+    local Main = Window:NewTab("Main")
+    local Misc = Window:NewTab("Misc")
+    local Character = Window:NewTab("Character")
+    local Settings = Window:NewTab("Settings")
+    local Credit = Window:NewTab("Credit")
+    
+----Sections
+    local Maina = Main:NewSection("Main")
+    local Visual = Main:NewSection("Visual")
+    local GunMods = Misc:NewSection("Gun Mods")
+    local Another = Misc:NewSection("Another")
+    local Setting = Settings:NewSection("Settings")
+    local Charactera = Character:NewSection("Character")
+    local CreditSection = Credit:NewSection("Geta#0983")
+    local CreditSection2 = Credit:NewSection("Free version")
+    local CreditSection3 = Credit:NewSection("discord.gg/34hwcKFR2e")
+ 
+----Features
+----Main
+local Aimlock = Maina:NewToggle("Aimlock", "Lock into head enemies", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local SilentAim = Maina:NewToggle("Silent Aim", "Silent Aim", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local Bhop = Maina:NewToggle("Bhop", "Bhop", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local Hitbox = Maina:NewSlider("Hitbox", "Hitbox", 200, 1, function(c)
+    print(c)
+end)
+
+local HeadSize = Maina:NewSlider("Head Size", "Head Size", 50, 1, function(d)
+    print(d)
+end)
+----Visual
+local Espenemies = Visual:NewToggle("Esp Enemies", "Esp Enemies", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local EspTeam = Visual:NewToggle("Esp Teammates", "Esp Teammates", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local EspAll = Visual:NewToggle("Esp All", "Esp All", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local Chamsenemies = Visual:NewToggle("Chams Enemies", "Chams Enemies", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local ChamsTeam = Visual:NewToggle("Chams Teammates", "Chams Teammates", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local ChamsAll = Visual:NewToggle("Chams All", "Chams All", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+----Gun Mods
+    local Ammo = GunMods:NewToggle("Ammo", "Ammo", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local Recoil = GunMods:NewToggle("Recoil", "Recoil", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local Reload = GunMods:NewToggle("Reload", "Reload", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local FireRate = GunMods:NewToggle("Fire Rate", "Fire Rate", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local Penatration = GunMods:NewToggle("Penatration", "Penatration", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local Automatic = GunMods:NewToggle("Automatic", "Automatic", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local InstantKill = GunMods:NewToggle("Instant Kill", "Instant Kill", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local BulletsSpeed = GunMods:NewSlider("Bullets Speed", "Bullets Speed", 1000, 0, function(a)
+        print("Changed")
+    end)
+
+----Another
+local AntiFlash = Another:NewToggle("Anti Flash", "Anti Flash", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local AntiSmoke = Another:NewToggle("Anti Smoke", "Anti Smoke", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local AntiFire = Another:NewToggle("Anti Fire", "Anti Fire", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local KillAll = Another:NewToggle("Kill all", "Kill all", function(onoff)
+    if onoff then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+local CrashSv = Another:NewToggle("Crash Server", "Crash Server", function(onoff)
+    if onoff then
+        game.Players.LocalPlayer:Kick("Bad kid")
+    else
+        print("Off")
+    end
+end)
+----Settings
+
+    local AutoRejoin = Setting:NewToggle("AutoRejoin", "AutoRejoin", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+
+    local espcolor = Setting:NewColorPicker("Esp Color", "Esp Color", Color3.fromRGB(0,0,0), function(color)
+        print("Changed")
+    end)
+
+    local chamscolor = Setting:NewColorPicker("Chams Color", "Chams Color", Color3.fromRGB(0,0,0), function(color)
+        print("Changed")
+    end)
+
+    local togglegui = Setting:NewKeybind("Toggles Gui", "Change key toggles gui", Enum.KeyCode.K, function()
+        Library:ToggleUI()
+    end)
+    local version = Setting:NewDropdown("Version Hub", "VerisonHub", {"Free", "Paid", "Test"}, function(VersionA)
+        if VersionA == "Free" then
+            print("Changed")
+        elseif VersionA == "Paid" then
+            game.Players.LocalPlayer:Kick("Not Whitelist!")
+        else
+            game.Players.LocalPlayer:Kick("Not Whitelist!")
+    end)
+----Character
+    local WalkSpeed = Charactera:NewSlider("WalkSpeed", "WalkSpeed", 1000, 0, function(a)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+    end)
+    local GodMode = Charactera:NewToggle("God Mode", "God Mode", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+    local AntiAim = Charactera:NewToggle("Anti Aim", "Anti Aim", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+    local Spinbot = Charactera:NewToggle("Spinbot", "Spinbot", function(onoff)
+        if onoff then
+            print("On")
+        else
+            print("Off")
+        end
+    end)
+    
+
+else
+    game.Players.LocalPlayer:Kick("Not Support!")
+end
