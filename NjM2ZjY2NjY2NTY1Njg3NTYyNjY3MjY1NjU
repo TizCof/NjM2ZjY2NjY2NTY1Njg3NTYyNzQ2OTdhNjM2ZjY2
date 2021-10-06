@@ -230,7 +230,8 @@ end)
             game.Players.LocalPlayer:Kick("Not Whitelist!")
         else
             game.Players.LocalPlayer:Kick("Not Whitelist!")
-    end)
+        end
+end)
 ----Character
     local WalkSpeed = Charactera:NewSlider("WalkSpeed", "WalkSpeed", 1000, 0, function(a)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
